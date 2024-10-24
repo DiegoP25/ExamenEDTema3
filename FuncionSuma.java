@@ -1,35 +1,25 @@
 import java.util.Scanner;
 
+public class FuncionResta {
 
+    private static int primerMinuendo;
+    private static int segundoSustraendo; 
 
-public class FuncionSuma {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Introduce el primer minuendo:");
+        primerMinuendo = in.nextInt();
+        in.nextLine();
+        System.out.println("Introduce el segundo sustraendo:");
+        segundoSustraendo = in.nextInt();
+        in.nextLine();
+        System.out.println("La resta es: " + resta(primerMinuendo, segundoSustraendo));
+        
+        in.close();
+    }
 
-	
-	
-	private static int primerSumando;
-	
-	private static int segundoSumando; 
-	
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		
-		
-		System.out.println("Introduce el primer sumando:");
-		primerSumando = in.nextInt();
-		in.nextLine();
-		System.out.println("Introduce el segundo sumando:");
-		segundoSumando = in.nextInt();
-		in.nextLine();
-		System.out.println("La suma es: " + suma(primerSumando, segundoSumando));
-		
-		in.close();
-
-	}
-	
-	
-	
-	private static int suma (int sumando1, int sumando2) {
-		return sumando1-sumando2;
-	}
-
+    private static int resta(int minuendo, int sustraendo) {
+        return minuendo - sustraendo; // Realiza la resta
+    }
 }
