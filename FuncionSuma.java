@@ -1,7 +1,7 @@
-import java.util.Scanner; // Importa la clase Scanner para la entrada de datos
+import java.util.Scanner; // Importamos la clase Scanner para la entrada de datos
 
 /**
- * Clase que realiza una operación de resta entre dos números.
+ * Clase que realiza resta entre dos números.
  */
 public class FuncionResta {
 
@@ -11,7 +11,6 @@ public class FuncionResta {
 
     /**
      * Método principal que ejecuta el programa.
-     *
      * @param args Argumentos de línea de comandos (no se utilizan)
      */
     public static void main(String[] args) {
@@ -36,7 +35,6 @@ public class FuncionResta {
 
     /**
      * Método que realiza la resta entre dos números.
-     *
      * @param minuendo El número del cual se resta.
      * @param sustraendo El número que se resta.
      * @return El resultado de la resta.
